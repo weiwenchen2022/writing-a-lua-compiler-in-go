@@ -1,0 +1,10 @@
+# Go
+pkg/
+bin/
+
+# Lua
+luac.out
+*.luac
+
+# Others
+*.DS_store
