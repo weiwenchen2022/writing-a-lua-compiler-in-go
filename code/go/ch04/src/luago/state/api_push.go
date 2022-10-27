@@ -24,6 +24,8 @@ func (self *luaState) PushNumber(n float64) {
 	self.stack.push(n)
 }
 
+// [-0, +1, m]
+// http://www.lua.org/manual/5.3/manual.html#lua_pushstring
 func (self *luaState) PushString(s string) {
 	self.stack.push(s)
 }
