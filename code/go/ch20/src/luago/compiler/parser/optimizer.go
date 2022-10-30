@@ -209,6 +209,7 @@ func optimizeUnm(exp *UnopExp) Exp {
 	case *FloatExp:
 		if x.Val != 0 {
 			x.Val = -x.Val
+			return x
 		}
 	
 	default:	
